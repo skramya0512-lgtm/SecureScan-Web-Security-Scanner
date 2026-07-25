@@ -5,6 +5,9 @@ import "../styles/auth.css";
 
 function Login() {
 
+  const navigate = useNavigate();
+  console.log("Navigate is:", navigate);
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
