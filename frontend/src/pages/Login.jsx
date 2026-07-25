@@ -4,7 +4,6 @@ import api from "../services/api";
 import "../styles/auth.css";
 
 function Login() {
-  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",

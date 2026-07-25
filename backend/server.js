@@ -58,13 +58,13 @@ app.use(errorHandler);
 const startServer = async () => {
   try {
 
-    await connectDB();
+    await sequelize.sync({ alter: true });
 
-   await sequelize.sync();
+console.log("✅ Database synchronized successfully");
 
-    app.listen(PORT, () => {
-      console.log(`✅ SecureScan Server running on port ${PORT}`);
-    });
+app.listen(PORT, () => {
+  console.log(`✅ SecureScan Server running on port ${PORT}`);
+});
 
   } 
 
