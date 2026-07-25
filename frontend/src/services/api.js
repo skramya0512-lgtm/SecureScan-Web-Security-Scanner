@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://securescan-backend-5xbl.onrender.com/api",
+  baseURL: "https://your-backend-name.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
